@@ -2,7 +2,7 @@
 Dungeonmans Unofficial Patch using Harmony
 
 
-**Patch 1 for Dungeonmans 1.81e
+##Patch 1 for Dungeonmans 1.81e
 
 Fix adventure map in hotbar
 +Will only consume the map if requirements are met
@@ -10,20 +10,20 @@ Fix adventure map in hotbar
 +Will display correct tooltip
 +Will be removed from hotbar after being consumed
 
-**Patch 2 for Dungeonmans 1.81e
+##Patch 2 for Dungeonmans 1.81e
 
 Fix adventure map dungeon generation on overworld
 +Will no longer generate an adventure map with coordinates equal to an already put dungeon
 +Will check before placing dungeon if there is another already at the same coordinates and place it nearby instead
 
-**Patch 3 for Dungeonmans 1.81e
+##Patch 3 for Dungeonmans 1.81e
 
 Fix "The Way Home" skill
 +Skill is now set as not passive, so you can grab and hover it to the hotbar
 +Fixed tooltip to show the correct icon
 +Fixed the image to be a square (non passive skill type of icon)
 
-**Path 4 for Dungeonmans 1.81e
+##Path 4 for Dungeonmans 1.81e
 
 Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be loadede from AssemblyMods folder
 +Fix adventure map in the hotbar being used with keyboards numbers **sorry I forgot to test that**
@@ -36,7 +36,7 @@ Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be 
 
 *****************************************************************************************
 Added to "dmGame.cs" at namespace "DungeonMans"
-''
+```
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class StaticConstructorOnStartup : Attribute
     {
@@ -164,11 +164,11 @@ Added to "dmGame.cs" at namespace "DungeonMans"
 
         private static bool globalResolverIsSet;
     }
-''
+```
 
 *****************************************************************************************
 Added at the beggining of the class "dmGame"
-''
+```
 	public ModAssemblyHandler modAssemblyHandler;
 
         public static void logWrite(string logMessage, string directory="", bool initial=false)
@@ -191,11 +191,11 @@ Added at the beggining of the class "dmGame"
             {
             }
         }
-''
+```
 
 *****************************************************************************************
 Added at the beginning of "public dmGame()"
-''
+```
             modAssemblyHandler = new ModAssemblyHandler("AssemblyMods");
             modAssemblyHandler.LoadAssembly();
-''
+```
