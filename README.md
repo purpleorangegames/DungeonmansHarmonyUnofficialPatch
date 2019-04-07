@@ -25,7 +25,7 @@ Fix "The Way Home" skill
 
 ##Path 4 for Dungeonmans 1.81e
 
-Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be loadede from AssemblyMods folder
+Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be loaded from AssemblyMods folder
 +Fix adventure map in the hotbar being used with keyboards numbers **sorry I forgot to test that**
 +Fix for when a map has the same location of a dungeon, now it expands the search range if necessary to find a suitable nearby location
 +Reverted all changes from the executable and moved them to Harmony
