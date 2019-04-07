@@ -36,6 +36,7 @@ Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be 
 
 *****************************************************************************************
 Added to "dmGame.cs" at namespace "DungeonMans"
+''
 [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     public class StaticConstructorOnStartup : Attribute
     {
@@ -163,9 +164,11 @@ Added to "dmGame.cs" at namespace "DungeonMans"
 
         private static bool globalResolverIsSet;
     }
+''
 
 *****************************************************************************************
 Added at the beggining of the class "dmGame"
+''
 	public ModAssemblyHandler modAssemblyHandler;
 
         public static void logWrite(string logMessage, string directory="", bool initial=false)
@@ -188,10 +191,11 @@ Added at the beggining of the class "dmGame"
             {
             }
         }
-
+''
 
 *****************************************************************************************
 Added at the beginning of "public dmGame()"
+''
             modAssemblyHandler = new ModAssemblyHandler("AssemblyMods");
             modAssemblyHandler.LoadAssembly();
-
+''
