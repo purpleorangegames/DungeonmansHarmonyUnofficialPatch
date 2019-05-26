@@ -4,35 +4,59 @@ Dungeonmans Unofficial Patch using Harmony
 
 ##Patch 1 for Dungeonmans 1.81e
 
+
 Fix adventure map in hotbar
+
 +Will only consume the map if requirements are met
+
 +Will only show quantity one as maps are unique
+
 +Will display correct tooltip
+
 +Will be removed from hotbar after being consumed
+
 
 ##Patch 2 for Dungeonmans 1.81e
 
+
 Fix adventure map dungeon generation on overworld
+
 +Will no longer generate an adventure map with coordinates equal to an already put dungeon
+
 +Will check before placing dungeon if there is another already at the same coordinates and place it nearby instead
+
 
 ##Patch 3 for Dungeonmans 1.81e
 
+
 Fix "The Way Home" skill
+
 +Skill is now set as not passive, so you can grab and hover it to the hotbar
+
 +Fixed tooltip to show the correct icon
+
 +Fixed the image to be a square (non passive skill type of icon)
+
 
 ##Path 4 for Dungeonmans 1.81e
 
+
 Two additional fixes and added Harmony to Dungeonmans so Harmony patches can be loaded from AssemblyMods folder
+
 +Fix adventure map in the hotbar being used with keyboards numbers **sorry I forgot to test that**
+
 +Fix for when a map has the same location of a dungeon, now it expands the search range if necessary to find a suitable nearby location
+
 +Reverted all changes from the executable and moved them to Harmony
+
 +Now there is no need to overwrite the "field_work_perks.txt" file, the changes are being made in Harmony
+
 +Changed the texture to have a different name so there is no need to overwrite ("power_icons_2.xnb"), the patch will load this one instead
+
 +A log will be generated regarding the DLLs loaded in the AssemblyMods folder, the log is truncated so it nevers becomes big
+
 +All patches in Harmony are either Prefix or Postfix, some extensions were also created
+
 
 *****************************************************************************************
 Added to "dmGame.cs" at namespace "DungeonMans"
